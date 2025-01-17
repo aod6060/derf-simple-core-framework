@@ -1,0 +1,18 @@
+Import("env")
+
+
+def source(file):
+    return "#/src/" + file
+
+env["source_files"] += [
+    source("main.cpp")
+]
+
+# 3rd Party Libraries
+SConscript("#/src/thirdparty/imgui/SConscript", exports="env")
+
+# Compile Engine
+SConscript("#/src/core/SConscript", exports="env")
+
+# Compile Game
+SConscript("#/src/demo/SConscript", exports="env")

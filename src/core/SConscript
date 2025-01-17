@@ -1,0 +1,24 @@
+Import("env")
+
+
+
+# Compile the config module
+SConscript("#/src/core/config/SConscript", exports="env")
+
+# Compile the lua wrapper module
+SConscript("#/src/core/lw/SConscript", exports="env")
+
+# Compile the app
+SConscript("#/src/core/app/SConscript", exports="env")
+
+# Compile the input
+SConscript("#/src/core/input/SConscript", exports="env")
+
+# Compile the font
+SConscript("#/src/core/font/SConscript", exports="env")
+
+# Compile the glw
+SConscript("#/src/core/glw/SConscript", exports="env")
+
+# Compile the igw
+SConscript("#/src/core/igw/SConscript", exports="env")

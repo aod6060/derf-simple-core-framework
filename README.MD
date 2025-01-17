@@ -1,0 +1,3 @@
+# Derf Simple Core Framework
+
+This is the successor to DSGE but simplified. The goal of DSCF is to make a framework that could be used to create realtime applications that used in both 2D and 3D applications. I'll be using this to create demos and games. You are free to use it because it is under the good old mit license as for DSGE I'm might continue down the line but for now its on the back burner for now.

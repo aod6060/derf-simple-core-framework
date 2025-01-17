@@ -1,0 +1,85 @@
+{
+	"app" : 
+	{
+		"caption" : "DSCF: Example",
+		"display" : 0,
+		"fullscreen" : false,
+		"resolution" : 19
+	},
+	"input" : 
+	{
+		"gamepad" : 
+		{
+			"players" : 
+			[
+				{
+					"mapping" : 
+					[
+						{
+							"controller-button" : "CB_B",
+							"name" : "jump-im-ctrl"
+						}
+					]
+				},
+				{
+					"mapping" : 
+					[
+						{
+							"controller-button" : "CB_A",
+							"name" : "jump-im-ctrl"
+						}
+					]
+				},
+				{
+					"mapping" : 
+					[
+						{
+							"controller-button" : "CB_B",
+							"name" : "jump-im-ctrl"
+						}
+					]
+				},
+				{
+					"mapping" : 
+					[
+						{
+							"controller-button" : "CB_A",
+							"name" : "jump-im-ctrl"
+						}
+					]
+				}
+			]
+		},
+		"mapping" : 
+		[
+			{
+				"input" : "KEYS_SPACE",
+				"is-mouse" : false,
+				"name" : "jump-im"
+			},
+			{
+				"input" : "KEYS_RETURN",
+				"is-mouse" : false,
+				"name" : "lua-test-3"
+			},
+			{
+				"input" : "KEYS_LEFT",
+				"is-mouse" : false,
+				"name" : "move-left"
+			},
+			{
+				"input" : "KEYS_RIGHT",
+				"is-mouse" : false,
+				"name" : "move-right"
+			}
+		]
+	},
+	"physics" : {},
+	"render" : {},
+	"sound" : 
+	{
+		"master-volume" : 0.063000001013278961,
+		"music-volume" : 0.057000000029802322,
+		"sound-fx-volume" : 0.071999996900558472
+	}
+}

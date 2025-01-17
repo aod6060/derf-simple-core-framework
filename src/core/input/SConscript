@@ -1,0 +1,14 @@
+Import("env")
+
+
+def source(file):
+    return "#/src/core/input/" + file
+
+env["source_files"] += [
+    source("input.cpp"),
+    source("input_mapping.cpp"),
+    source("input_gamepad.cpp"),
+    source("input_gamepad_mapping.cpp"),
+    source("input_mapping_config.cpp"),
+    source("input_gamepad_mapping_config.cpp")
+]
