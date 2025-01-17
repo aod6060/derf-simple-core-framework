@@ -7,3 +7,6 @@ def source(file):
 env["source_files"] += [
     source("game.cpp")
 ]
+
+
+SConscript("#/src/demo/triangle/SConscript", exports="env")
