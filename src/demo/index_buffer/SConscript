@@ -1,0 +1,9 @@
+Import("env")
+
+def source(file):
+    return "#/src/demo/index_buffer/" + file
+
+
+env["source_files"] += [
+    source("index_buffer.cpp")
+]
