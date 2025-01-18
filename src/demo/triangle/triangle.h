@@ -15,6 +15,8 @@ namespace triangle {
 
         glw::VertexBuffer vertexBuffer;
         
+        float yrot = 0.0f;
+        
         virtual void init();
         virtual void handleEvent(SDL_Event* e);
         virtual void update(float delta);
