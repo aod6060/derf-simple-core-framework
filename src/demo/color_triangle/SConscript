@@ -1,0 +1,9 @@
+Import("env")
+
+def source(file):
+    return "#/src/demo/color_triangle/" + file
+
+
+env["source_files"] += [
+    source("color_triangle.cpp")
+]
