@@ -7,8 +7,8 @@ namespace index_buffer {
     void IndexBufferApp::init() {
         glEnable(GL_DEPTH_TEST);
 
-        this->vertexShader.init(GL_VERTEX_SHADER, "data/shaders/color_triangle/color_triangle.vert.glsl");
-        this->fragmentShader.init(GL_FRAGMENT_SHADER, "data/shaders/color_triangle/color_triangle.frag.glsl");
+        this->vertexShader.init(GL_VERTEX_SHADER, "data/shaders/index_buffer/index_buffer.vert.glsl");
+        this->fragmentShader.init(GL_FRAGMENT_SHADER, "data/shaders/index_buffer/index_buffer.frag.glsl");
 
         this->program.init({&this->vertexShader, &this->fragmentShader});
 
@@ -28,12 +28,6 @@ namespace index_buffer {
         this->program.unbind();
 
         this->vertexBuffer.init();
-
-        /*
-        this->vertexBuffer.add3(0.0f, 1.0f, 0.0f);
-        this->vertexBuffer.add3(1.0f, -1.0f, 0.0f);
-        this->vertexBuffer.add3(-1.0f, -1.0f, 0.0f);
-        */
 
         this->vertexBuffer.add3(-1.0, 1.0, 0.0);
         this->vertexBuffer.add3(1.0, 1.0, 0.0);
