@@ -168,8 +168,9 @@ namespace glw {
 
         void texParameter(GLenum pname, int32_t param);
 
+        void genMipmaps();
+        
         static void createTexture2DFromFile(Texture2D* out, std::string path);
-
 
     };
 

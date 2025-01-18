@@ -12,3 +12,4 @@ env["source_files"] += [
 SConscript("#/src/demo/triangle/SConscript", exports="env")
 SConscript("#/src/demo/color_triangle/SConscript", exports="env")
 SConscript("#/src/demo/index_buffer/SConscript", exports="env")
+SConscript("#/src/demo/textures/SConscript", exports="env")

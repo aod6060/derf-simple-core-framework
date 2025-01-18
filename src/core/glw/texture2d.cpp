@@ -45,6 +45,10 @@ namespace glw {
         glTexParameteri(GL_TEXTURE_2D, pname, param);
     }
 
+    void Texture2D::genMipmaps() {
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+
     void Texture2D::createTexture2DFromFile(Texture2D* out, std::string path) {
         /*
             For now I'm going to assume every texture
@@ -66,8 +70,10 @@ namespace glw {
 
         out->texImage2D(0, GL_RGBA, temp->w, temp->h, GL_RGBA, GL_UNSIGNED_BYTE, temp->pixels);
         
-        out->texParameter(GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-        out->texParameter(GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        out->texParameter(GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        out->texParameter(GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+
+        out->genMipmaps();
         
         out->unbind(GL_TEXTURE0);
 

@@ -1,0 +1,9 @@
+Import("env")
+
+def source(file):
+    return "#/src/demo/textures/" + file
+
+
+env["source_files"] += [
+    source("textures.cpp")
+]
